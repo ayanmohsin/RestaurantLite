@@ -332,6 +332,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo.gif" />
+    <Content Include="Database\RestaurantLite.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="RestaurantLite.sdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -53,10 +53,10 @@
             // 
             this.btnViewAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewAll.Location = new System.Drawing.Point(435, 380);
-            this.btnViewAll.Margin = new System.Windows.Forms.Padding(2);
+            this.btnViewAll.Location = new System.Drawing.Point(582, 464);
+            this.btnViewAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnViewAll.Name = "btnViewAll";
-            this.btnViewAll.Size = new System.Drawing.Size(140, 57);
+            this.btnViewAll.Size = new System.Drawing.Size(187, 70);
             this.btnViewAll.TabIndex = 5;
             this.btnViewAll.Text = "View All";
             this.btnViewAll.UseVisualStyleBackColor = true;
@@ -66,10 +66,10 @@
             // 
             this.btnSaveRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveRecord.Location = new System.Drawing.Point(290, 380);
-            this.btnSaveRecord.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSaveRecord.Location = new System.Drawing.Point(389, 464);
+            this.btnSaveRecord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveRecord.Name = "btnSaveRecord";
-            this.btnSaveRecord.Size = new System.Drawing.Size(140, 57);
+            this.btnSaveRecord.Size = new System.Drawing.Size(187, 70);
             this.btnSaveRecord.TabIndex = 3;
             this.btnSaveRecord.Text = "Save Record";
             this.btnSaveRecord.UseVisualStyleBackColor = true;
@@ -79,10 +79,10 @@
             // 
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(146, 380);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Location = new System.Drawing.Point(196, 464);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(140, 57);
+            this.btnDelete.Size = new System.Drawing.Size(187, 70);
             this.btnDelete.TabIndex = 5222;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -92,10 +92,10 @@
             // 
             this.bClearAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bClearAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bClearAll.Location = new System.Drawing.Point(2, 380);
-            this.bClearAll.Margin = new System.Windows.Forms.Padding(2);
+            this.bClearAll.Location = new System.Drawing.Point(3, 464);
+            this.bClearAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bClearAll.Name = "bClearAll";
-            this.bClearAll.Size = new System.Drawing.Size(140, 57);
+            this.bClearAll.Size = new System.Drawing.Size(187, 70);
             this.bClearAll.TabIndex = 4;
             this.bClearAll.Text = "Clear All";
             this.bClearAll.UseVisualStyleBackColor = true;
@@ -107,18 +107,20 @@
             this.tableLayoutPanel1.SetColumnSpan(this.txtRecNo, 3);
             this.txtRecNo.Enabled = false;
             this.txtRecNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecNo.Location = new System.Drawing.Point(147, 81);
+            this.txtRecNo.Location = new System.Drawing.Point(197, 100);
+            this.txtRecNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRecNo.Name = "txtRecNo";
-            this.txtRecNo.Size = new System.Drawing.Size(283, 26);
+            this.txtRecNo.Size = new System.Drawing.Size(376, 30);
             this.txtRecNo.TabIndex = 2222;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(87, 214);
+            this.label3.Location = new System.Drawing.Point(119, 261);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.Size = new System.Drawing.Size(70, 17);
             this.label3.TabIndex = 0;
             this.label3.Text = "Sale Rate";
             // 
@@ -126,9 +128,10 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 88);
+            this.label1.Location = new System.Drawing.Point(144, 107);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(45, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Rec.#";
             // 
@@ -154,6 +157,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -164,16 +168,18 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(968, 504);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1291, 620);
             this.tableLayoutPanel1.TabIndex = 1;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(82, 151);
+            this.label2.Location = new System.Drawing.Point(112, 184);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.Size = new System.Drawing.Size(77, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Dish Name";
             // 
@@ -183,9 +189,10 @@
             this.txtDishName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tableLayoutPanel1.SetColumnSpan(this.txtDishName, 3);
             this.txtDishName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDishName.Location = new System.Drawing.Point(147, 144);
+            this.txtDishName.Location = new System.Drawing.Point(197, 177);
+            this.txtDishName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDishName.Name = "txtDishName";
-            this.txtDishName.Size = new System.Drawing.Size(428, 26);
+            this.txtDishName.Size = new System.Drawing.Size(569, 30);
             this.txtDishName.TabIndex = 0;
             // 
             // numSaleRate
@@ -193,14 +200,15 @@
             this.numSaleRate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.tableLayoutPanel1.SetColumnSpan(this.numSaleRate, 2);
             this.numSaleRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numSaleRate.Location = new System.Drawing.Point(147, 207);
+            this.numSaleRate.Location = new System.Drawing.Point(197, 254);
+            this.numSaleRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numSaleRate.Maximum = new decimal(new int[] {
             999999999,
             0,
             0,
             0});
             this.numSaleRate.Name = "numSaleRate";
-            this.numSaleRate.Size = new System.Drawing.Size(283, 26);
+            this.numSaleRate.Size = new System.Drawing.Size(377, 30);
             this.numSaleRate.TabIndex = 1;
             this.numSaleRate.Enter += new System.EventHandler(this.numSaleRate_Enter);
             // 
@@ -209,9 +217,10 @@
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(147, 19);
+            this.checkBox1.Location = new System.Drawing.Point(197, 24);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(138, 24);
+            this.checkBox1.Size = new System.Drawing.Size(185, 29);
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Stock Item";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -220,7 +229,8 @@
             // 
             this.lkpCategory.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.tableLayoutPanel1.SetColumnSpan(this.lkpCategory, 3);
-            this.lkpCategory.Location = new System.Drawing.Point(147, 270);
+            this.lkpCategory.Location = new System.Drawing.Point(197, 331);
+            this.lkpCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lkpCategory.Name = "lkpCategory";
             this.lkpCategory.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkpCategory.Properties.Appearance.Options.UseFont = true;
@@ -228,7 +238,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lkpCategory.Properties.ShowAddNewButton = true;
             this.lkpCategory.Properties.View = this.searchLookUpEdit1View;
-            this.lkpCategory.Size = new System.Drawing.Size(454, 26);
+            this.lkpCategory.Size = new System.Drawing.Size(605, 30);
             this.lkpCategory.TabIndex = 2;
             this.lkpCategory.AddNewValue += new DevExpress.XtraEditors.Controls.AddNewValueEventHandler(this.lkpCategory_AddNewValue);
             // 
@@ -243,18 +253,20 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(92, 277);
+            this.label4.Location = new System.Drawing.Point(124, 338);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.Size = new System.Drawing.Size(65, 17);
             this.label4.TabIndex = 5224;
             this.label4.Text = "Category";
             // 
             // frmDish
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 504);
+            this.ClientSize = new System.Drawing.Size(1291, 620);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmDish";
             this.Text = "frmDish";
             this.Load += new System.EventHandler(this.frmDish_Load);

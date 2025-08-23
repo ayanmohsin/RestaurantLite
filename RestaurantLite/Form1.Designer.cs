@@ -64,10 +64,10 @@
             // 
             this.btnPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPurchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchase.Location = new System.Drawing.Point(147, 306);
-            this.btnPurchase.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPurchase.Location = new System.Drawing.Point(195, 376);
+            this.btnPurchase.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(200, 151);
+            this.btnPurchase.Size = new System.Drawing.Size(267, 186);
             this.btnPurchase.TabIndex = 0;
             this.btnPurchase.Text = "Purchase";
             this.btnPurchase.UseVisualStyleBackColor = true;
@@ -77,10 +77,10 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(147, 175);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(195, 216);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 127);
+            this.button2.Size = new System.Drawing.Size(267, 156);
             this.button2.TabIndex = 0;
             this.button2.Text = "Sales";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -91,10 +91,10 @@
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(351, 175);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(468, 216);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(199, 127);
+            this.button3.Size = new System.Drawing.Size(265, 156);
             this.button3.TabIndex = 0;
             this.button3.Text = "Payment / Receipt";
             this.button3.UseVisualStyleBackColor = true;
@@ -104,10 +104,10 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(147, 461);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(195, 566);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 118);
+            this.button1.Size = new System.Drawing.Size(267, 145);
             this.button1.TabIndex = 0;
             this.button1.Text = "Reports";
             this.button1.UseVisualStyleBackColor = true;
@@ -117,10 +117,10 @@
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(351, 306);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Location = new System.Drawing.Point(468, 376);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(198, 151);
+            this.button5.Size = new System.Drawing.Size(264, 186);
             this.button5.TabIndex = 0;
             this.button5.Text = "Setup Customer";
             this.button5.UseVisualStyleBackColor = true;
@@ -129,10 +129,10 @@
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(351, 461);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
+            this.button7.Location = new System.Drawing.Point(468, 566);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(198, 118);
+            this.button7.Size = new System.Drawing.Size(264, 145);
             this.button7.TabIndex = 0;
             this.button7.Text = "Setup Dishes";
             this.button7.UseVisualStyleBackColor = true;
@@ -159,7 +159,7 @@
             this.tableLayoutPanel1.Controls.Add(this.button4, 4, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -169,36 +169,37 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(836, 609);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1115, 750);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // Mennu
             // 
+            this.Mennu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.Mennu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StockMenu,
             this.CustomerBalance,
             this.SalesReport});
             this.Mennu.Name = "Mennu";
-            this.Mennu.Size = new System.Drawing.Size(176, 70);
+            this.Mennu.Size = new System.Drawing.Size(204, 76);
             // 
             // StockMenu
             // 
             this.StockMenu.Name = "StockMenu";
-            this.StockMenu.Size = new System.Drawing.Size(175, 22);
+            this.StockMenu.Size = new System.Drawing.Size(203, 24);
             this.StockMenu.Text = "Stock Report";
             this.StockMenu.Click += new System.EventHandler(this.StockMenu_Click);
             // 
             // CustomerBalance
             // 
             this.CustomerBalance.Name = "CustomerBalance";
-            this.CustomerBalance.Size = new System.Drawing.Size(175, 22);
+            this.CustomerBalance.Size = new System.Drawing.Size(203, 24);
             this.CustomerBalance.Text = "Customer Balances";
             this.CustomerBalance.Click += new System.EventHandler(this.CustomerBalance_Click);
             // 
             // SalesReport
             // 
             this.SalesReport.Name = "SalesReport";
-            this.SalesReport.Size = new System.Drawing.Size(175, 22);
+            this.SalesReport.Size = new System.Drawing.Size(203, 24);
             this.SalesReport.Text = "Sales";
             this.SalesReport.Click += new System.EventHandler(this.SalesReport_Click);
             // 
@@ -206,8 +207,8 @@
             // 
             this.lkpCustomer.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.tableLayoutPanel1.SetColumnSpan(this.lkpCustomer, 3);
-            this.lkpCustomer.Location = new System.Drawing.Point(147, 142);
-            this.lkpCustomer.Margin = new System.Windows.Forms.Padding(2);
+            this.lkpCustomer.Location = new System.Drawing.Point(195, 176);
+            this.lkpCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lkpCustomer.Name = "lkpCustomer";
             this.lkpCustomer.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkpCustomer.Properties.Appearance.Options.UseFont = true;
@@ -215,7 +216,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lkpCustomer.Properties.NullText = "Select Customer Vendor For Balances";
             this.lkpCustomer.Properties.View = this.searchLookUpEdit1View;
-            this.lkpCustomer.Size = new System.Drawing.Size(405, 28);
+            this.lkpCustomer.Size = new System.Drawing.Size(540, 34);
             this.lkpCustomer.TabIndex = 2;
             // 
             // searchLookUpEdit1View
@@ -231,22 +232,23 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblCompany, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(352, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(469, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.59702F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.40298F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 134);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(267, 165);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::RestaurantLite.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 104);
+            this.pictureBox1.Size = new System.Drawing.Size(261, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -257,9 +259,10 @@
             this.lblCompany.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompany.ForeColor = System.Drawing.Color.Red;
-            this.lblCompany.Location = new System.Drawing.Point(3, 108);
+            this.lblCompany.Location = new System.Drawing.Point(4, 132);
+            this.lblCompany.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCompany.Name = "lblCompany";
-            this.lblCompany.Size = new System.Drawing.Size(194, 26);
+            this.lblCompany.Size = new System.Drawing.Size(259, 33);
             this.lblCompany.TabIndex = 4;
             this.lblCompany.Text = "label1";
             this.lblCompany.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -274,7 +277,8 @@
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.dtFrom, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.dtTo, 1, 2);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 6;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -283,16 +287,17 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(259, 134);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(345, 165);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 6);
+            this.label1.Location = new System.Drawing.Point(4, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Date From";
             // 
@@ -300,9 +305,10 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 32);
+            this.label2.Location = new System.Drawing.Point(19, 36);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.Size = new System.Drawing.Size(59, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Date To";
             // 
@@ -310,26 +316,29 @@
             // 
             this.dtFrom.CustomFormat = "dd-MMM-yyyy";
             this.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtFrom.Location = new System.Drawing.Point(65, 3);
+            this.dtFrom.Location = new System.Drawing.Point(86, 4);
+            this.dtFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtFrom.Name = "dtFrom";
-            this.dtFrom.Size = new System.Drawing.Size(185, 20);
+            this.dtFrom.Size = new System.Drawing.Size(245, 22);
             this.dtFrom.TabIndex = 1;
             // 
             // dtTo
             // 
             this.dtTo.CustomFormat = "dd-MMM-yyyy";
             this.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtTo.Location = new System.Drawing.Point(65, 29);
+            this.dtTo.Location = new System.Drawing.Point(86, 34);
+            this.dtTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtTo.Name = "dtTo";
-            this.dtTo.Size = new System.Drawing.Size(185, 20);
+            this.dtTo.Size = new System.Drawing.Size(245, 22);
             this.dtTo.TabIndex = 1;
             // 
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(558, 143);
+            this.button4.Location = new System.Drawing.Point(744, 177);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(138, 27);
+            this.button4.Size = new System.Drawing.Size(184, 33);
             this.button4.TabIndex = 6;
             this.button4.Text = "Print Ledger";
             this.button4.UseVisualStyleBackColor = true;
@@ -337,13 +346,14 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(836, 609);
+            this.ClientSize = new System.Drawing.Size(1115, 750);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

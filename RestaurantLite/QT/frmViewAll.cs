@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraGrid.Columns;
+﻿using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
 using System;
 using System.Collections.Generic;
@@ -69,6 +70,21 @@ namespace RestaurantLite.QT
                 GridColumn clmAmount = grdView.Columns["SaleRate"];
                 clmAmount.OptionsColumn.AllowEdit = true;
                 grdView.CellValueChanged += GrdView_CellValueChanged;
+
+                string strError = "";
+                string strQry = "Select RecNo,Category From Category";
+                clsDataAccessLayer cls = new clsDataAccessLayer();
+                DataSet ds = cls.GetDataSet(strQry, ref strError);
+
+                GridColumn clmCategory = grdView.Columns["CategoryId"];
+                clmCategory.OptionsColumn.AllowEdit = true;
+                RepositoryItemSearchLookUpEdit repoCategory = new RepositoryItemSearchLookUpEdit();
+                repoCategory.DataSource = ds.Tables[0]; // e.g. DataTable, List<Category>
+                repoCategory.DisplayMember = "Category";      // column to show
+                repoCategory.ValueMember = "RecNo";          // column to save
+                clmCategory.ColumnEdit = repoCategory;
+                grdControl.RepositoryItems.Add(repoCategory);
+
             }
             grdControl.DataSource = _DataSource.Tables[0];
             grdView.BestFitColumns();
@@ -90,6 +106,22 @@ namespace RestaurantLite.QT
                 string strQuery = $@" Update SetupDishes set SaleRate = {dSaleRate} Where RecNo in ({iItemId}) ";
                 strError = cls.MultipleDML(strQuery, "", "");
             }
+            if (grdView.FocusedColumn == grdView.Columns["CategoryId"])
+            {
+                clsDataAccessLayer cls = new clsDataAccessLayer();
+                RestaurantLite.clsDataAccessLayer.OurResult strError;
+
+                DataRow ldr = grdView.GetDataRow(grdView.FocusedRowHandle);
+                int iItemId = clsDataAccessLayer.CleanValueNew<int>(ldr["RecNo"]);
+                int iCategory = clsDataAccessLayer.CleanValueNew<int>(ldr["CategoryId"]);
+
+                string strQuery = $@" Update SetupDishes set CategoryId = {iCategory} Where RecNo in ({iItemId}) ";
+                strError = cls.MultipleDML(strQuery, "", "");
+            }
+
+
+
+
         }
 
         private void GrdView_ShowingEditor(object sender, CancelEventArgs e)
@@ -97,6 +129,12 @@ namespace RestaurantLite.QT
             if (grdView.FocusedColumn == grdView.Columns["isSelect"])
             {
                 DataRow roww = grdView.GetDataRow(grdView.FocusedRowHandle);
+                string sStatus = clsDataAccessLayer.CleanValueNew<string>(roww["Status"]);
+                if (sStatus == "X")
+                {
+                    e.Cancel =  true;
+                    return;
+                }
                 bool isCashReceived = clsDataAccessLayer.CleanValueNew<bool>(roww["isCashReceived"]);
                 bool isSelect = clsDataAccessLayer.CleanValueNew<bool>(roww["isSelect"]);
                 if (isCashReceived)
@@ -148,31 +186,31 @@ namespace RestaurantLite.QT
             }
              GridView view = sender as GridView;
              if(view == null) return;
-           
-             if (e.RowHandle >= 0)
-             {
-                  Color cb= Color.White;
-                  Color cf = Color.Black;
 
-                  DevExpress.XtraGrid.Views.Base.ColumnView cview = (DevExpress.XtraGrid.Views.Base.ColumnView)sender;
-                  Object key = grdView.GetRowCellValue(e.RowHandle, grdView.Columns["isCashReceived"]);
-                  bool bisReceived = false;
-                  if (key != null)
-                  {
-                      if (key.ToString() != "")
-                      {
-                          bisReceived = Convert.ToBoolean(key);
-                      }
-                  }
-                  if (bisReceived == true)
-                  {
-                      cb = Color.Green;
-                      cf = Color.White;
-                  }
-                  e.Appearance.BackColor = cb;
-                  e.Appearance.ForeColor = cf;
-                  e.Appearance.Options.UseBackColor = true;
-             }
+            if (e.RowHandle >= 0)
+            {
+                DataRow ldr = view.GetDataRow(e.RowHandle);
+                Color cb = Color.White;
+                Color cf = Color.Black;
+
+                DevExpress.XtraGrid.Views.Base.ColumnView cview = (DevExpress.XtraGrid.Views.Base.ColumnView)sender;
+                bool bisReceived = clsDataAccessLayer.CleanValueNew<bool>(ldr["isCashReceived"]);
+                if (bisReceived == true)
+                {
+                    cb = Color.Green;
+                    cf = Color.White;
+                }
+                e.Appearance.BackColor = cb;
+                e.Appearance.ForeColor = cf;
+                e.Appearance.Options.UseBackColor = true;
+                string sStatus = clsDataAccessLayer.CleanValueNew<string>(ldr["Status"]);
+                if (sStatus == "X")
+                {
+                    e.Appearance.BackColor = Color.Red;
+                    e.Appearance.ForeColor = Color.White;
+                    e.Appearance.Options.UseBackColor = true;
+                }
+            }
         }
 
         private void btnReceived_Click(object sender, EventArgs e)

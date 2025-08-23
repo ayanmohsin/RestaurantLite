@@ -189,6 +189,7 @@ namespace RestaurantLite
             List<string> lstColumns = new List<string>();
             lstColumns.Add("RecNo");
             lstColumns.Add("DishName");
+            lstColumns.Add("CategoryId");
             lstColumns.Add("SaleRate");
             lstColumns.Add("isStockItem");
             frm.VisibleColumns = lstColumns;
@@ -271,6 +272,9 @@ namespace RestaurantLite
             numSaleRate.Select(0, numSaleRate.Value.ToString().Length);
         }
 
-   
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

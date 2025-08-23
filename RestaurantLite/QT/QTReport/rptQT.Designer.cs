@@ -619,7 +619,7 @@
             // xrTableCell11
             // 
             this.xrTableCell11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "dtReceipt.Amount")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "dtReceipt.Amount", "{0:0 RS.}")});
             this.xrTableCell11.Name = "xrTableCell11";
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
             xrSummary1.FormatString = "{0:n}";
@@ -650,7 +650,7 @@
             // xrTableCell16
             // 
             this.xrTableCell16.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "dtReceipt.DeliveryCharges")});
+            new DevExpress.XtraReports.UI.XRBinding("Text", null, "dtReceipt.DeliveryCharges", "{0:0 RS.}")});
             this.xrTableCell16.Name = "xrTableCell16";
             this.xrTableCell16.StylePriority.UseTextAlignment = false;
             this.xrTableCell16.Text = "xrTableCell16";
@@ -712,7 +712,7 @@
             this.DataMember = "dtReceipt";
             this.DataSource = this.dsReport1;
             this.Margins = new System.Drawing.Printing.Margins(7, 0, 0, 0);
-            this.PageHeight = 600;
+            this.PageHeight = 1000;
             this.PageWidth = 290;
             this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {

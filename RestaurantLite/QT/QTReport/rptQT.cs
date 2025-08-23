@@ -51,7 +51,8 @@ namespace RestaurantLite.QT
             double dTotalAmount = Convert.ToDouble(dtb.Rows[0]["BillAmount"]);
             double dDC = Convert.ToDouble(dtb.Rows[0]["DeliveryCharges"]);
             double TotalAmount = dTotalAmount + dDC;
-            cellTotalAmount.Text = TotalAmount.ToString();
+            string formatted = string.Format("{0:N2} RS.", TotalAmount);
+            cellTotalAmount.Text = formatted;
             if (sQTType == "D")
             {
                 xrTable6.Visible = true;

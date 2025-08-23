@@ -573,7 +573,7 @@ namespace RestaurantLite
             int iRecNo = _RecNo;
             RestaurantLite.clsDataAccessLayer.OurResult strError;
             string sQType = clsDataAccessLayer.CleanValueNew<string>(rdoQType.EditValue);
-
+            Calculate();
             DataRow drSave = _DataSource.Tables[0].Rows[0];
 
             if (sQType == "DI")
@@ -838,10 +838,12 @@ namespace RestaurantLite
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
+            btnPrint.Visible = true;
+            btnDelete.Visible = true;
             btnSave.Visible = true;
             clsDataAccessLayer cls = new clsDataAccessLayer();
             string strError = "";
-            DataSet ds = cls.GetDataSet("Select a.*,b.Customer from QTMaster a Left Outer Join Customer b on a.CustomerId =b.RecNo Where a.Status = 'A' order by RecNo desc;Select * from QTDetail", ref strError);
+            DataSet ds = cls.GetDataSet("Select a.*,b.Customer from QTMaster a Left Outer Join Customer b on a.CustomerId =b.RecNo  order by RecNo desc;Select * from QTDetail", ref strError);
             frmViewAll frm = new frmViewAll();
             frm.DataSource = ds;
             List<string> lstColumns = new List<string>();
@@ -849,7 +851,7 @@ namespace RestaurantLite
             lstColumns.Add("OrderNo");
             lstColumns.Add("TableNo");
             lstColumns.Add("QTType");
-            lstColumns.Add("Customer");
+            //lstColumns.Add("Customer");
             lstColumns.Add("DName");
             lstColumns.Add("CName");
             lstColumns.Add("TotalAmount");
@@ -871,12 +873,22 @@ namespace RestaurantLite
                         _DataSource.Tables[dtb.TableName].ImportRow(dr);
                     }
                 }
-
+                
                 bool isCashReceived = clsDataAccessLayer.CleanValueNew<bool>(_DataSource.Tables[0].Rows[0]["isCashReceived"]);
 
 
                 btnSave.Visible = !isCashReceived;
                 btnPayment.Visible = !isCashReceived;
+
+                string sStatus = clsDataAccessLayer.CleanValueNew<string>(_DataSource.Tables[0].Rows[0]["Status"]);
+                if (sStatus == "X")
+                {
+                    btnSave.Visible = false;
+                    btnPayment.Visible = false;
+                    btnDelete.Visible = false;
+                    btnPrint.Visible = false;
+
+                }
 
                 //_DataSource = frm.SelectedData;
                 //BindData(_DataSource);
@@ -1034,6 +1046,13 @@ namespace RestaurantLite
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Do you want to Delete QT?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
+                txtItem.Focus();
+                return;
+            }
+
             if (_RecNo != 0)
             {
                 clsDataAccessLayer cls = new clsDataAccessLayer();

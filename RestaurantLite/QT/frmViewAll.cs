@@ -86,6 +86,17 @@ namespace RestaurantLite.QT
                 grdControl.RepositoryItems.Add(repoCategory);
 
             }
+            foreach (DataRow item in _DataSource.Tables[0].Rows)
+            {
+                string sStatus  = Convert.ToString(item["Status"]);
+                if (sStatus == "X")
+                {
+                    item["TotalAmount"] = 0;
+                    item["DeliveryCharges"] = 0;
+                }
+            }
+
+
             grdControl.DataSource = _DataSource.Tables[0];
             grdView.BestFitColumns();
             grdView.ShowingEditor += GrdView_ShowingEditor;
@@ -251,6 +262,11 @@ namespace RestaurantLite.QT
             {
                 MessageBox.Show("Payment Received", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

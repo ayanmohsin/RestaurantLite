@@ -38,13 +38,13 @@
             // grdControl
             // 
             this.grdControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.grdControl.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
+            this.grdControl.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grdControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grdControl.Location = new System.Drawing.Point(0, 0);
             this.grdControl.MainView = this.grdView;
-            this.grdControl.Margin = new System.Windows.Forms.Padding(4);
+            this.grdControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grdControl.Name = "grdControl";
-            this.grdControl.Size = new System.Drawing.Size(984, 590);
+            this.grdControl.Size = new System.Drawing.Size(861, 590);
             this.grdControl.TabIndex = 0;
             this.grdControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdView});
@@ -63,9 +63,10 @@
             // 
             // btnReceived
             // 
-            this.btnReceived.Location = new System.Drawing.Point(818, 594);
+            this.btnReceived.Location = new System.Drawing.Point(715, 594);
+            this.btnReceived.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnReceived.Name = "btnReceived";
-            this.btnReceived.Size = new System.Drawing.Size(155, 32);
+            this.btnReceived.Size = new System.Drawing.Size(135, 32);
             this.btnReceived.TabIndex = 1;
             this.btnReceived.Text = "Payment Received";
             this.btnReceived.UseVisualStyleBackColor = true;
@@ -74,12 +75,12 @@
             // 
             // frmViewAll
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 628);
+            this.ClientSize = new System.Drawing.Size(861, 628);
             this.Controls.Add(this.btnReceived);
             this.Controls.Add(this.grdControl);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmViewAll";
             this.Text = "frmViewAll";
             this.Load += new System.EventHandler(this.frmViewAll_Load);

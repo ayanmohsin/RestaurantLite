@@ -843,7 +843,19 @@ namespace RestaurantLite
             btnSave.Visible = true;
             clsDataAccessLayer cls = new clsDataAccessLayer();
             string strError = "";
-            DataSet ds = cls.GetDataSet("Select a.*,b.Customer from QTMaster a Left Outer Join Customer b on a.CustomerId =b.RecNo  order by RecNo desc;Select * from QTDetail", ref strError);
+            string strQry = $@"
+                    Select a.*,b.Customer from QTMaster a 
+                    Left Outer Join Customer b on a.CustomerId =b.RecNo  
+                    Where TDate > '{DateTime.Now.AddDays(-1).ToString("dd-MMM-yyyy")}'
+                    and TDate < '{DateTime.Now.AddDays(1).ToString("dd-MMM-yyyy")}'
+                    order by RecNo desc;
+                    Select * from QTDetail
+                    Where RecNo in (Select RecNo from QTMaster     
+                    Where TDate > '{DateTime.Now.AddDays(-1).ToString("dd-MMM-yyyy")}'
+                    and TDate < '{DateTime.Now.AddDays(1).ToString("dd-MMM-yyyy")}'
+                    )
+            ";
+            DataSet ds = cls.GetDataSet(strQry, ref strError);
             frmViewAll frm = new frmViewAll();
             frm.DataSource = ds;
             List<string> lstColumns = new List<string>();

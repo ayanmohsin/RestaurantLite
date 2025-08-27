@@ -235,7 +235,6 @@
     <EmbeddedResource Include="frmPurchase.resx">
       <DependentUpon>frmPurchase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="QT\frmAmount.resx">
       <DependentUpon>frmAmount.cs</DependentUpon>
     </EmbeddedResource>
